@@ -15,7 +15,7 @@ class StudentsTableSeeder extends Seeder
     {
     DB::table('students')->insert([
         
-        ['name' => 'Jozce Katambi', 'program' => 'Software Engineering'],
+        ['name' => 'Joyce Katambi', 'program' => 'Software Engineering'],
         ['name' => 'Jane Masuke', 'program' => 'Computer Science'],
         ['name' => 'Michael Johnson', 'program' => 'Software Engineering'],
         ['name' => 'Emily Williams', 'program' => 'Information Technology'],
