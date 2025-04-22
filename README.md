@@ -1,3 +1,50 @@
+ASSIGMENT 2:BASH SCRIPT FOR SERVER MANAGEMENT
+The different between backup schemes and explain how each is executed, including the
+advantages and disadvantages of each as follows
+A) Full Backup
+•	Backs up everything (entire project and database).
+•	Advantage: Easy to restore.
+•	Disadvantage: Takes up a lot of space and time.
+
+B) Incremental Backup
+•   Backs up only what changed since the last backup.
+•	Advantage: Saves space and time.
+•	Disadvantage: Restoration takes longer (requires the full and all incremental backups).
+
+C) Differential Backup
+•	Backs up all changes since the last full backup.
+•	Advantage: Faster restore than incremental.
+•	Disadvantage: Larger than incremental, smaller than full.
+
+Description of Scripts
+1. health_check.sh
+•	Purpose: Monitor system resources and API health.
+•	What it does:
+o	Checks CPU, memory, and disk usage.
+o	Ensures the Apache server is running.
+o	Verifies /students and /subjects API endpoints return HTTP 200.
+o	Logs status to /var/log/server_health.log.
+o	Logs warnings if any issues are found (e.g., high disk usage or API downtime).
+
+2. backup_api.sh
+•	Purpose: Create daily backups of the Laravel API and database.
+•	What it does:
+o	Archives the project directory into /home/ubuntu/backups/.
+o	Dumps the database (MySQL/PostgreSQL) into .sql format.
+o	Deletes backups older than 7 days to conserve space.
+o	Logs to /var/log/backup.log.
+
+3. update_server.sh
+•	Purpose: Automatically update the server and Laravel project.
+•	What it does:
+o	Updates Ubuntu packages.
+o	Pulls the latest code from GitHub.
+o	Restarts the Apache web server.
+o	Logs success or failure in /var/log/update.log.
+
+
+
+ASSIGMENT 1
 Student and Subject API
 This project is a RESTful API built with Laravel that provides a simple system for managing
 students and their associated subjects across four academic years: First Year, Second Year,
@@ -97,5 +144,4 @@ o Update your .env with your AWS server DB credentials
 o Run php artisan migrate
 Serve your app with Apache or Laravel’s server:
 php artisan serve --host=0.0.0.0 --port=8000
-
 
