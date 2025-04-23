@@ -94,7 +94,8 @@ Cron Job setup(crontab -l)
 /home/ubuntu/student-api/bash_scripts/update_server.sh ->Runs every 3 days  to update packages
 
 
-ASSIGMENT 1: ASSIGMENT 1-BUILD AND DEPLOZ A SIMPLE API
+
+ASSIGMENT 1: ASSIGMENT 1-BUILD AND DEPLOY A SIMPLE API
 
 Student and Subject API
 
