@@ -34,8 +34,7 @@ Description of Scripts
 •	Purpose: Monitor system resources and API health.
 
 •	What it does:
-
-    i)hecks CPU, memory, and disk usage.
+     i)hecks CPU, memory, and disk usage.
 
     ii)Ensures the Apache server is running.
     
