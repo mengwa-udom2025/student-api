@@ -34,15 +34,15 @@ Description of Scripts
 •	Purpose: Monitor system resources and API health.
 
 •	What it does:
-     i)hecks CPU, memory, and disk usage.
+    i)Ensures the Apache server is running.
 
-    ii)Ensures the Apache server is running.
-    
-    iii) Verifies /students and /subjects API endpoints return HTTP 200.
-    
-    iv)Logs status to /var/log/server_health.log.
-    
-     v)Logs warnings if any issues are found (e.g., high disk usage or API downtime).
+   ii) Verifies /students and /subjects API endpoints return HTTP 200.
+
+   iii)Logs status to /var/log/server_health.log.
+
+   iv)Logs warnings if any issues are found (e.g., high disk usage or API downtime).
+   
+   v)hecks CPU, memory, and disk usage.
 
 2. backup_api.sh
    
