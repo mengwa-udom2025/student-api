@@ -221,7 +221,7 @@ Cloning the Project
 
 To get a copy of this project locally:
 
-git clone https://github.com/Mengwa2025/student-api.git
+git clone https://github.com/mengwa-udom2025/student-api.git
 
 cd student-api
 
