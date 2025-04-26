@@ -1,3 +1,40 @@
+ASSIGMENT: Docker Containerization 
+
+**Dockerfile**: Builds Laravel app image.
+
+**docker-compose.yml**: Orchestrates Laravel and MySQL containers.
+
+### Commands
+
+```
+docker build -t student-api .
+docker run -d -p 8080:80 student-api
+docker-compose up -d
+docker-compose down
+```
+
+Access API:
+
+- `http://localhost:8080/api/students`
+- `http://localhost:8080/api/subjects`
+
+## Docker Hub
+
+Images hosted at:
+
+[Docker Hub Repository](https://hub.docker.com/r/your-dockerhub-username/student-api)
+
+**Additional Files Added:**
+
+- Dockerfile
+- docker-compose.yml
+
+**Deployment URL:**
+
+- http://ec2-3-95-216-124.compute-1.amazonaws.com/student
+- http://ec2-3-95-216-124.compute-1.amazonaws.com/subjects
+
+
 ASSIGMENT 2:BASH SCRIPT FOR SERVER MANAGEMENT
 
 The different between backup schemes and explain how each is executed, including the
